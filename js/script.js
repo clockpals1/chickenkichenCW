@@ -73,6 +73,7 @@ function cartNumbers(product) {
   setItems(product);
 }
 
+
 function setItems(product) {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
@@ -122,8 +123,8 @@ function displayCart() {
         <span>${item.name}</span>
         </div>
         <div class="price"> $${item.price}</div>
-        <div class="quantity "> 
-        <ion-icon name="arrow-back-circle"></ion-icon> 
+        <div class="quantity ">
+        <ion-icon name="arrow-back-circle"></ion-icon>
        <span> ${
          item.inCart
        }</span> <ion-icon name="arrow-forward-circle"></ion-icon></div>
@@ -142,7 +143,7 @@ function displayCart() {
         <h4 class="basketTotal">
             $${cartCost}:00
         </h4>
-    
+
     </div>
     `;
   }

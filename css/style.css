@@ -15,6 +15,7 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 ul {
   float: right;
   list-style-type: none;
@@ -221,7 +222,7 @@ ul li.active {
   }
 }
 
-/* 
+/*
 @media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
