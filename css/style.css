@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+header {
+  color: grey;
+  height: 15vh;
+  background-size: cover;
+  background-position: center;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #8E4D3F ;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a :hover {
+  background-color: #fff;
+  color: #000;
+}
+.logo img {
+  float: left;
+  width: 150px;
+  height: auto;
+}
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+ul li.active {
+  background-color: #fff;
+  color: #000;
+}
+.title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title1 {
+  color: grey;
+}
+.title h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.title h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* video {
+  /* override other styles to make responsive */
+
+  height: auto !important;
+  position: absolute;
+  min-width: 100%;
+
+  right: 0em;
+} */
+
+.about-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  align-content: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #8E4D3F;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.products-container{
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+.products-container ion-icon{
+  font-size: 25px;
+  color: tomato;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-header{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
+}
+.product-title{
+  width: 45%;
+}
+
+.price{
+  width: 15%;
+
+  display: flex;
+  align-items: center;
+
+}
+.quantity{
+  width: 30%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+
+}
+.total{
+  width: 10%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+
+}
+.product{
+  width: 45%;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 4px solid lightgrey;
+  display: flex;
+  align-items: center;
+
+}
+
+.product ion-icon{
+
+  cursor: pointer;
+}
+
+.products{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.products img{
+  width: 75px;
+
+}
+
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+.basketTotalTitle{
+  width: 30%;
+}
+.basketTotal{
+  width: 10%;
+}
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* 
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+} */

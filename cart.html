@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <div class="logo">
+          <a href=" ./index.html">
+            <img src="./images/chicken-logo.jpg" alt="logo" />
+          </a>
+        </div>
+
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="about.html"> About us </a></li>
+          <li><a href="order.html"> Order now </a></li>
+          <li class="cart">
+            <a href="cart.html">
+              <ion-icon name="basket"></ion-icon>Cart <span> 0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="products-container">
+      <div class="product-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="price">PRICE</h5>
+        <h5 class="quantity">QUANTITY</h5>
+        <h5 class="total">TOTAL</h5>
+      </div>
+      <div class="products"></div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
